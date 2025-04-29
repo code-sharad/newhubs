@@ -44,7 +44,7 @@ export default function ArticlePage() {
         
         setArticle(news)
 
-        const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}`, requestOptions)
+        const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/news-url`, requestOptions)
         if (!response.ok) {
           throw new Error(`Error fetching article by URL: ${response.statusText}`)
         }
