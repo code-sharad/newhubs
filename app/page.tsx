@@ -26,7 +26,7 @@ export default function Home() {
       {/* <NewsSearch /> */}
 
       <Tabs defaultValue="all" className="mt-8 " onValueChange={setActiveSource}>
-          <h2 className="text-2xl font-semibold">Latest News</h2>
+        <h2 className="text-2xl font-semibold">Latest News</h2>
         <div className="flex items-center justify-between mb-4">
           <TabsList className="pl-32">
             <TabsTrigger value="all">All Sources</TabsTrigger>
@@ -38,9 +38,9 @@ export default function Home() {
 
         <TabsContent value="all" className="mt-0">
           <div className="grid grid-cols-1 gap-6">
-            <NewsSource source="thehindu" limit={2} />
-            <NewsSource source="economictimes" limit={2} />
-            <NewsSource source="indianexpress" limit={2} />
+            <NewsSource source="thehindu" limit={6} />
+            <NewsSource source="economictimes" limit={6} />
+            <NewsSource source="indianexpress" limit={6} />
           </div>
           <div className="flex justify-center mt-8">
             <Button variant="outline" size="lg">

@@ -1,7 +1,7 @@
 // Function to fetch news from a specific source
 export async function fetchNews(source: string) {
   try {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/${source}`, {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/news/${source}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
