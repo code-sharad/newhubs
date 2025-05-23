@@ -18,7 +18,7 @@ export default function Home() {
           <Newspaper className="h-8 w-8 text-primary" />
           <h1 className="text-3xl font-bold">NewsHub</h1>
         </div>
-        <p className="text-muted-foreground max-w-2xl mx-auto">
+        <p className="font-sans text-muted-foreground max-w-2xl mx-auto">
           Your comprehensive digital platform for news from India's top publications
         </p>
       </header>
